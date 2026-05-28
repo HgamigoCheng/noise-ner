@@ -33,7 +33,7 @@ def cross_entropy(logits, labels, reduction='mean'):
     :param logits: shape: (N, C)
     :param labels: shape: (N, C)
     :param reduction: options: "none", "mean", "sum"
-    :return: loss or losses
+    :return: loss or losses//
     """
     N, C = logits.shape
     assert labels.size(0) == N and labels.size(1) == C, f'label tensor shape is {labels.shape}, while logits tensor shape is {logits.shape}'
